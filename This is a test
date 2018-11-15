@@ -99,6 +99,8 @@ On Error Resume Next
 
                     .Range("A1:H1") = Array("JOB ID", "COLUMN HEADER", "PREMISE CODE / SITE ID", "OLD VALUE", _
                         "NEW VALUE", "USER", "TIME OF CHANGE", "DATE OF CHANGE")
+                        
+                    .Range("A1:H1").AutoFilter
 
                 End If
 
