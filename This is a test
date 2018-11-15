@@ -50,7 +50,7 @@ Private Sub Worksheet_Change(ByVal Target As Range)
             Next
             
             'Place the next job Id in the job id column of the row that was changed
-            'Next job Id is the maximum job id number seen plus 1, padded with the appropiate number of 0s to make it 3 digits and prefixed
+            'Next job Id is the maximum job id number seen plus 1, padded with the appropiate number of 0s to make it 4 digits and prefixed
             Cells((Target.Row), Job_ID_Column) = Job_ID_Prefix & Format$(maxJobIdNumber + 1, "0000")
         
         End If
